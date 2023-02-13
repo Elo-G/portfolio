@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./style.css">
+		<link rel="stylesheet" href="./responsive.css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<title>portfolio</title>
+	</head>
+
+	<!-- ---------ATTENTION: dans twig qd tu mets des éléments qui sont ds assets, (ex img source etc...) 
+				tu enleves le "/assets" qui précède "/images", sinon ton image  (ou les autres élements que j'utilise 
+				et qui viennent de l'assets, ne s'afficheront pas ds le rendu html twig ),ça marche ainsi car twig comprends 
+				tout seul qu'il doit aller ds l'asset chercher tes éléments, dc on lui marque pas  ------------------------------------------ !-->
+
+
+	<body>
+		<!-- ----------------------  HEADER  ------------------------------------------ !-->
+		<header>
+			
+			<div id="logo"><img src="./images/LogoEloOk.png" width="80px" height="80px" alt="logo initiales"></div>
+			<nav>
+				<ul>
+					<li>
+						<a href="#presentation">A propos de moi</a>
+					</li>
+
+					<li>
+						<a href="#competences">Mes compétences</a>
+					</li>
+
+					<li>
+						<a href="#projets">Projets</a>
+					</li>
+
+					<li>
+						<a href="#formation">Formation</a>
+					</li>
+
+					<li>
+						<a href="/login">Login</a> <!-- lien ancre pour me ramener à ma route /login-->
+					</li>
+
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+
+					<li>
+						<a href="https://www.linkedin.com/"><img src="./images/IconeLinkedIn.png" alt="logo linkedin" width="30px"></a>
+					</li>
+
+					<li>
+						<a href="https://www.github.com//"><img src="./images/iconeGithub.png" alt="logo github" width="30px"></a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- ----------------------  MAIN  ------------------------------------------ !-->
+
+		<main>
+			<!------------Présentation--------------------!-->
+			<section class="forBackgroundW">
+			  <section class='contentSection' id="presentation">
+				  <article id="presLevelOne">
+					  <div id="divPhotoElo" class="animate__animated animate__backInLeft"> <img src="./images/photoElo.png" alt="ma photo" id="maPhoto"></div>
+
+					  <div id="aPropos" class="animate__animated animate__backInRight">
+						  <h1>A propos de moi.</h1>
+						  <p>
+							  Je m'appelle Elodie, en reconversion professionnelle,
+							  <br>
+							  je suis en formation à l'école Ri7 d'Aubagne,<br>
+							  pour devenir développeur front-end.
+						  </p>
+					  </div>
+				  </article>
+
+				  <hr>
+
+			  	  <div id="devLike" class="animate__animated animate__backInLeft">
+					  <p>
+						  <b>
+							  Ce que j'aime dans le dév :</b><br>
+						  créer et réaliser des projets, trouver des solutions pour répondre à des besoins, acquérir de nouvelles connaissances pour augmenter en compétences et pouvoir créer d'avantage.
+					  </p>
+				  </div>
+
+				  <div id="LifeLike" class="animate__animated animate__backInRight">
+					  <p>
+						  <b>Ce que j'aime dans la vie :</b><br>
+						  voyager, faire du sport, retrouver mes amis, et ma famille autour d'un bon repas, (si, si! ça n'est pas incompatible avec le sport).
+					  </p>
+				  </div>
+
+				  <button onclick="window.location.href = 'page-cv.html/';" class="animate__animated animate__backInLeft">mon cv<img src="./images/IconeCv.png" alt="picto cv"></button>
+			  </section>
+			</section>
+
+			<!------------Compétences --------------------!-->
+
+			<section class="forBackgroundB">
+				<section class='contentSection' id="competences">
+					<h1>Mes compétences</h1>
+					<article id="cardsContainer">
+						<div class="cards" data-aos="flip-left"><img src="./images/htmlCssCadre.png" alt="icones html et css"></div>
+						<div class="cards" data-aos="flip-left" data-aos-delay="500"><img src="./images/jsCadre.png" alt="icone js"></div>
+						<div class="cards" data-aos="flip-left" data-aos-delay="900"><img src="./images/bootstrapCadre.png" alt="icone bootstrap"></div>
+						<div class="cards" data-aos="flip-left" data-aos-delay="1300"><img src="./images/phpCadre.png" alt="icone php"></div>
+						<div class="cards" data-aos="flip-left" data-aos-delay="1700"><img src="./images/figmaCadre.png" alt="icone figma"></div>
+					    <div class="cards" data-aos="flip-left"data-aos-delay="2100"><img src="./images/mongoDbCadre.png" alt="logo mongodb"></div>
+					</article>
+				</section>
+			</section>
+
+
+			<!------------Projets--------------------!-->
+			<section class="forBackgroundW">
+			  <section class='contentSection' id="projets">
+
+
+
+			  
+				  <h1>Projets</h1>
+				  {% for project in projects %}
+					  <div class="slideshow-container">
+						  <div class="mySlides fade">
+							 <img src="./uploads/{{project.img}}" alt="image des projets" id="imgProject">
+							 <span id ="projectTitle"> <strong>{{project.name}}</strong></span>	<!---RAJOUTE MOI DS CETTE DIV LE NOM DU PROJECT!-->
+							 <span id ="techno"> <strong>{{project.technology}}</strong></span>
+					         <a href id="url"="{{project.url}}"> <strong>voir le projet</strong></a>
+							 <a href id="githubUrl"="{{project.githubUrl}}"><strong>voir le code</strong></a>
+						  </div>
+					  </div>
+				  {% endfor %}
+				  <br>
+
+				
+			  </section>
+
+
+		   </section>
+
+			<!------------Formation--------------------!-->
+			
+			<section class="forBackgroundB">
+			  <section class='contentSection' id="formation">
+				  <h1>Formation</h1>
+				  <div ><img id="pc" src="./images/pcTabMob.png" width="100%" alt="contenu formation ri7 contenu dans écran de pc " class="animate__animated animate__backInLeft">
+				  </div>
+			  </section>
+            </section>
+
+			<!------------Contact--------------------!-->
+          <section class="forBackgroundW">
+			  <section class='contentSection' id="contact">
+			  <h1>Contact</h1>
+
+				  <div id="form"> 
+					  <form action ="/sendMail" method="post"> <!--ds action on met la route utilisée pr m'envoyer le mail envoyé par  l'entreprise!-->
+					  <div class ="clientCompagny">	
+					       <input type="text" class='forInput'id="name" name="name" placeholder ="Nom : ">
+					       <input type="text" class='forInput' id="firstName" name="firstName" placeholder ="Prénom : ">
+                      </div>
+
+					  <div class ="clientCompagny">
+						   <input type="text" class='forInput' id="compagny" name= "compagny" placeholder="Nom de l'entreprise : ">
+						   <input type="text" class='forInput' id="location" name="location" placeholder="Ville : ">
+                      </div>
+
+					  <div>
+						   <input type="text" class='forInput' id="mail" name="mail" placeholder="E-mail : ">
+                      </div>
+					  <div>
+						  <textarea type="text" class='forInput'  id="message-contact" name="message" placeholder="Message : "></textarea>
+					   </div>
+					   <div id="divButton"><button id="mailButton" type ="submit"> envoyer</button></div>
+					  </form>
+				  </div>
+			  </section>
+		   </section>
+		</main>
+		<script src='./script/main.js'></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+
+	</body>
+</html>

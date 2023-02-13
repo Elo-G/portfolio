@@ -1,0 +1,33 @@
+
+ <!--Fichier TWIG dans lequel je vais créer un Formulaire pour AJOUTER MES PROJETS DS LA BDD via la route /addProject POST-->
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>formulaire d'ajout de projets</title>
+	</head>
+	<body>
+		<h1>formulaire ajout de projet</h1>
+
+    <!--Formulaire de login pour ajouter de nouveau projets une fois loguée!-->
+		<form action="/addProject" method="POST" enctype="multipart/form-data"><!--je met la route que je vais utiliser :c'est la route addProject
+                                                                              "enctype" c'est un attribut qui a pour valeur "multipart/form-data" cette valeur 
+                                                                              on l' a récup ds la notice de multer, faut la mettre ici c'est com ça, c'est tout !-->
+			<label for="">nom</label>
+			<input type="text" id="" name="name">
+			<label for="">techno</label>
+			<input type="text" id="" name="technology">
+            <label for="">url</label>
+			<input type="text" id="" name="url">
+            <label for="">githubUrl</label>
+			<input type="text" id="" name="githubUrl">
+            <label for="">image</label>
+			<input type="file" id="" name="img">
+
+			<button type="submit">valider</button> <!--un bouton submit renvoie à un post par nature!-->
+		</form>
+	</body>
+</html>
+
+<!--multer permet d'uploader des images!-->
