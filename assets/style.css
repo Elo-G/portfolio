@@ -1,251 +1,245 @@
-
-
- /*FONT*/
- @font-face {
-	font-family: 'proxima nova';
-	src: url('./font/proximanova-regular.otf'); 
+/*FONT*/
+@font-face {
+  font-family: "proxima nova";
+  src: url("./font/proximanova-regular.otf");
 }
 
 /*--------------------------  HEADER  --------------------------------*/
 body {
-   font-family: proxima nova !important;
-   
-   
- /* background-color:white; */
- background-image:url(./images/background.png) ;
-
-}
-
-main{
- display: flex;
- justify-content:center;
- margin-top: 15vh; 
- flex-direction: column;
-
-}
-
-header{
- width: 100%;
- display: flex;
- flex-direction: row;
- background-color: blue;
- align-items: center;
- color:white;
- font-size: 20px;
- z-index: 1;
- position: fixed;
- top: 0;
+  font-family: proxima nova !important;
+  width:100%;
+  padding: 0;
+  margin:0;
+  background-color:white;
  
 }
 
-
-#logo{
-    margin-top:5px; 
-    margin-left: 5px;
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: blue;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  z-index: 1;
+  position: fixed;
+  top: 0;
 }
 
-nav{
- width: 100%;
+#logo {
+  margin-top: 5px;
+  margin-left: 5px;
 }
 
-nav ul{
- display: flex;
- flex-direction: row;
- justify-content: space-around;
- list-style-type: none; /* pour enlever les puces*/
+nav {
+  width: 100%;
 }
 
-nav a{
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none; /* pour enlever les puces*/
+}
+
+nav li{
+height: 13px;
+}
+
+nav a {
   color: white !important;
   text-decoration: none;
 }
 
-#header-login a{
+#header-login a {
   color: black !important;
   text-decoration: none;
 }
 
 /*--------------------------  LOGIN  --------------------------------*/
-#msg-error{
+#msg-error {
   height: 40px;
   color: red;
   font-size: 60px;
 }
 
-.h1-log{
+.h1-log {
   margin-top: 120px;
 }
 
-/*--------------------------SECTIONS FOR BACKGROUND --------------------------------*/
-  
+/*--------------------------------------------     MAIN------------------------------------------------*/
 
-/* pr section sur fond Bleu*/ 
-.forBackgroundB{  
-width: 100%;  
-display: flex;
-justify-content: center;
-background-color:rgba(143, 143, 247, 0.239)
+main {
+ 
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh;
+  flex-direction: column;
+  font-size: 22px;
+}
+/*--------------------------SECTIONS FOR BACKGROUND ------------------------------*/
 
-
+/* pr section sur fond Bleu*/
+.forBackgroundB {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(143, 143, 247, 0.239);
 }
 
 /* pr section sur fond Blanc*/
-.forBackgroundW{  
-width: 100%;  
-display: flex;
-justify-content: center;
-background-color: white;
-
+.forBackgroundW {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
 }
 
-.contentSection{
+.contentSection {
   width: 60%;
 }
+
+
+h1 {
+  color: #2165e3;
+  font-size: 72px;
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.48);
+  margin: 70px 0px 0px 0px;
+}
 /*--------------------------  A PROPOS DE MOI  --------------------------------*/
-#presentation{ 
- 
-    margin-bottom: 80px;
+
+
+
+#presentation {
+  margin-bottom: 80px;
 }
 
-#presLevelOne{ /*-- photo + "<h1> et <p> :à propos de moi"--*/
-    display: flex;
-    justify-content: space-between;
-    height: 380px;
+#presLevelOne {
+  /*-- photo + "<h1> et <p> :à propos de moi"--*/
+  display: flex;
+  justify-content: space-between;
+  height: 380px;
 }
 
-hr{
-    margin-top: 0px;
+hr {
+  margin-top: -19px;
 }
 
-
-
-#divPhotoElo{
-    width: 370px;
-    margin-left: 5px;
-    margin-bottom: 2px;
+#divPhotoElo {
+  width: 350px;
+  height:380px;
+  margin-left: 5px;
+  margin-bottom: 2px;
 }
 
-#maPhoto{
-  width:350px;
-  height:390px;
+#maPhoto {
+  width: 350px;
+  height: 380px;
 }
 
 #aPropos {
-    float: right;
-    padding-left: 90px;
+  float: right;
+  padding-left: 90px;
 }
 
-h1{
-    color:#2165E3;
-    font-size:72px;
-    text-shadow:2px 3px 3px rgba(0, 0, 0, 0.48);
-    margin: 70px 0px 0px 0px;
-}
-#aPropos p{
-    font-size:22px;    
+
+
+
+#devLike {
+  margin-top: 30px;
+  margin-bottom: 55px;
+  animation-delay: 2s;
 }
 
-#devLike{
-    margin-top: 30px;
-    font-size:22px; 
-    margin-bottom: 55px;
-    animation-delay: 2s;
+#LifeLike {
+  margin-bottom: 55px;
+  float: right;
+  animation-delay: 3s;
 }
 
-#LifeLike{
-    font-size:22px; 
-    margin-bottom: 55px;
-   float: right;
-    animation-delay: 3s;
-}
-
-#presentation button{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 120px;
-    height: 40px;
-    background-color:#2165E3;
-    border: blue;
-    border-radius:5px;
-    font-size: 20px;
-    color: white;  
-    box-shadow:2px 3px 3px rgba(0, 0, 0, 0.48); 
-    animation-delay: 4s;
-    margin-top: 200px;
-    
+#presentation button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 120px;
+  height: 40px;
+  background-color: #2165e3;
+  border: blue;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.48);
+  animation-delay: 4s;
+  margin-top: 200px;
 }
 
 /*--------------------------  MES COMPETENCES --------------------------------*/
 
-
-
-#competences{
-size: inherit;
-width: 60%;
-margin-bottom:80px;
-}
-
-
-
-
-#cardsContainer{
-    display: flex; 
-    flex-wrap: wrap; 
-   justify-content: space-between;
-    width: 100%;
-    margin-top: 70px;
-}
-
-.cards{
- display: flex; 
- margin-bottom: 50px;
- box-shadow:2px 3px 3px rgba(0, 0, 0, 0.48);  
- border-radius: 8%;
-
-}
-
-/*-------------------------- PROJETS  --------------------------------*/
-#projets{
-  width: 60%;
+#competences {
+  size: inherit;
   margin-bottom: 80px;
 }
 
-#imgProject{
+#cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 100%;
-  margin-top:69px;
- 
+  margin-top: 70px;
 }
 
+.cards {
+  display: flex;
+  width: 300px;
+  height:200px;
+  margin-bottom: 50px;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.48);
+  border-radius: 8%;
+}
 
-#projectTitle{
-  color: blue;
-  font-size: 25px; }
+.cards img{
+  width: 300px;
+  height:200px;
+}
 
+/*-------------------------- PROJETS  --------------------------------*/
+#projets {
+  margin-bottom: 80px;
+}
 
- #techno{
+#imgProject {
+  width: 100%;
+  margin-top: 69px;
+}
+
+#projectTitle {
   color: blue;
   font-size: 25px;
-  
 }
 
-#url{
-  float:right;
+#techno {
+  color: blue;
+  font-size: 25px;
+}
+
+#url {
+  float: right;
   font-size: 25px;
   text-decoration: none;
   color: blue;
-  margin-left:5vh; 
+  margin-left: 5vh;
 }
 
-#githubUrl{
-  float:right;
+#githubUrl {
+  float: right;
   color: blue;
   font-size: 25px;
   text-decoration: none;
-  margin-left: 5vh; 
+  margin-left: 5vh;
 }
 
-                      /* code caroussel : */
+/* code caroussel : */
 
 /* Slideshow container */
 .slideshow-container {
@@ -295,144 +289,156 @@ margin-bottom:80px;
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-    .text {font-size: 11px}
+  .text {
+    font-size: 11px;
   }
+}
 
-                /* style pr cards : */
-.caroussel-face{
-   width: 600px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   box-shadow:2px 3px 3px rgba(0, 0, 0, 0.48);  
-   }
+/* style pr cards : */
+.caroussel-face {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.48);
+}
 
-   .caroussel-face p{
-    margin-top: 0px;
-   }
+.caroussel-face p {
+  margin-top: 0px;
+}
 
-  #nameTech{
-    display: flex;
-   flex-direction: row;
-    margin-bottom: 0px;
-  }
-   
-  .tech{
-    padding-left: 15px;
-  }
+#nameTech {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0px;
+}
 
-  /*--------------------------  FORMATION   --------------------------------*/
-#formation{
-  width: 60%;
+.tech {
+  padding-left: 15px;
+}
+
+/*--------------------------  FORMATION   --------------------------------*/
+#formation {
   margin-bottom: 80px;
- }
- #pc{
-  margin-top:69px ;
- }
+}
+#pc {
+  margin-top: 69px;
+}
 
-  /*-------------------------- CONTACT  --------------------------------*/
+/*-------------------------- CONTACT  --------------------------------*/
 
-  #contact{
-    width: 60%;
-    margin-bottom: 80px;
-  }
+#contact {
+  margin-bottom: 80px;
+}
 
-  #form{
-    margin-top:69px;
-  background-color: #2165E3;
-  width:100% ;
+#formContainer {
+  margin-top: 69px;
+  background-color: #2165e3;
+  width: 100%;
   display: flex;
   justify-content: center;
   height: 450px;
   border-radius: 5px;
-  box-shadow: 2px,  2px, 0px 2px;
-  box-shadow:2px 3px 3px rgba(0, 0, 0, 0.35); 
-}
-.forInput{
-  border-radius:5px;
+  box-shadow: 2px, 2px, 0px 2px;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.35);
 }
 
-  .clientCompagny{
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-  }
+form{
+  width:80%;
+}
+.forInput {
+  border-radius: 5px;
+}
 
-  #name{
-    width: 45%;
-    height: 40px;
-    box-shadow:2px 3px 3px rgba(0, 0, 0, 0.20); 
-    border:none;
-    font-size: 20px;
-  }
+.clientCompagny {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
 
-  #firstName{
-    width: 45%;
-    height: 40px;
-    margin-left: 50px;
-    box-shadow:2px 3px 3px rgba(0, 0, 0, 0.20); 
-    border:none;
-    font-size: 20px;
-  }
+#name {
+  width: 46%;
+  height: 40px;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  font-size: 20px;
+  margin-left: 30px;
+}
 
-  #compagny{
-    width: 45%;
-    height: 40px;
-    box-shadow:2px 3px 3px rgba(0, 0, 0, 0.20);
-    border:none;
-    font-size: 20px;
-  }
+#firstName {
+  width: 43%;
+  height: 40px;
+  margin-left: 42px;
+  margin-top: 0px;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  font-size: 20px;
+}
 
-  #location{
-    width:45%;
-    height: 40px;
-    margin-left: 50px;
-    box-shadow:2px 3px 3px rgba(0, 0, 0, 0.20); 
-    border:none;
-    font-size: 20px;
-  }
+#compagny {
+  width: 46%;
+  height: 40px;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  font-size: 20px;
+  margin-left: 30px;
+}
 
-  #mail{
-    width: 94%;
-    height: 40px;
-    margin-top: 20px;
-    box-shadow:2px 3px 3px rgba(0, 0, 0, 0.20); 
-    border:none;
-    font-size: 20px;
-  }
+#location {
+  width: 43%;
+  height: 40px;
+  margin-left: 42px;
+  margin-top: 0px;
 
-  #message-contact{
-    width: 94%;
-    height:130px;
-    margin-top: 20px;
-    box-shadow:2px 3px 3px rgba(0, 0, 0, 0.20); 
-    border:none;
-    font-size: 21px !important;
-    font-family:proxima nova !important;
-  }
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  font-size: 20px;
+}
 
-  #divButton{
-   margin-top: 30px;
- 
- 
-  }
+#mail {
+  width: 90%;
+  height: 40px;
+  margin-top: 20px;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  font-size: 20px;
+  margin-left: 30px;
+}
 
-  #mailButton{
-    width: 20%;
-    height: 40px;
-    color:black;
-    border: blue;
-    border-radius:5px;
-    font-size: 20px;
-    background-color: white;  
-    box-shadow:2px 3px 3px rgba(0, 0, 0, 0.30); 
-  
-  }
+#message-contact {
+  width: 90%;
+  height: 130px;
+  margin-top: 20px;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  font-size: 21px !important;
+  font-family: proxima nova !important;
+  margin-left: 30px;
+}
 
+#divButton {
+  margin-top: 30px;
+}
+
+#mailButton {
+  width: 20%;
+  height: 40px;
+  color: black;
+  border: blue;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: white;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
+  margin-left: 30px;
+}
