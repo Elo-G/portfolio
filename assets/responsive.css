@@ -1,711 +1,1014 @@
 
 
-/*---------------------------------------------------- @media(max-width: 1100px)--------------------------------------------------------- */
 
-@media(max-width: 1100px){
-    
-    .contentSection{
-        width: 75%;
-      }
 
-      h1{
-       
-        font-size:60px;
-       
+/*--------------------------------------------------------------------------------------- @media(max-width: 1220px)--------------------------------------------------------- */
+
+
+@media(max-width: 1220px){
+ /* --------------------------------------GENERALITES------------- */   
+   .contentSection{
+      width: 75%;
     }
+
+    h1{ 
+      font-size:60px;  
+    }
+
     main{
-        font-size:22px;
+      font-size:22px;
+    }
+
+    .nav-link{
+      font-size: 17px;
     }
 
 
-/* --------------------------------------COMPETENCES------------- */
-      .cards{
-        width: 280px;
-        height: 180px;
-       }
-
-       .cards img{
-        width: 280px;
-        height: 180px;
-       }
-
-       #cardsContainer{
-       justify-content: space-around;
-    }
-/* --------------------------------------PROJETS-------------------- */
-    .strong {
-        font-size:22px ;
+    nav li{
+      margin-left: 30px !important;
     }
 
-    /* --------------------------------------CONTACT-------------------- */
-    .clientCompagny{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        margin-top: 17px;
-      }
-    
-      #name{
-        width: 45%;
-        font-size: 17px;
-      }
-    
-      #firstName{
-        width: 45%;
-        font-size: 17px;
-      }
-    
-      #compagny{
-        width: 55%;
-        font-size: 17px;
-      }
-    
-      #location{
-        width:55%;
-        font-size: 17px;
-      }
-    
-      #mail{
-        width: 100%;
-        font-size: 17px;
-      }
-      #message-contact{
-         width: 100%;
-         font-size: 17px;
-        }
-     
 
+    nav a {
+      margin-left: 25px !important;
+  }
+
+    .icon-link-git{
+      width: 16px;
+    }    
+/* -----------------------------------A PROPOS DE MOI------------- */
+ #presentation{
+  margin-bottom: 20px;
 }
-/*------------------------------------------------@media(max-width: 1024px)I pad mini (à l'horizontal)----------------------------------------------------*/
-@media(max-width: 1024px){ 
-  
-  
-    header{
 
-        font-size: 18px; 
-       }
+#presLevelOne {
+  height: 315px;
+}
 
-       
-nav ul {
-    justify-content:flex-start;
+#divPhotoElo {
+  width: 320px;
+  height:350px;
 
-  }
-
-  nav a{
-    padding-left:35px;
-  }
-
-    nav img{
-        width: 18px;
-    }
-
-    #presLevelOne {
-        height: 340px;
-    }
-
-    #divPhotoElo {
-  width: 300px;
-  height: 340px;
-  margin-left: 5px;
-  margin-bottom: 2px;
 }
 
 #maPhoto {
-  width: 300px;
-  height: 340px;
+  width: 320px;
+  height: 350px;
 }
 
-hr {
-    margin-top: -18px;
-  }
 
+ /* --------------------------------------COMPETENCES------------- */
+    .cards{
+     width: 280px;
+     height: 180px;
+    }
 
-      .cards{
-        width: 300px;
-        height: 200px;
-       }
+    .cards img{
+     width: 280px;
+     height: 180px;
+    }
 
-       .cards img{
-        width: 250px;
-        height: 150px;
-       }
+   #cardsContainer{
+      justify-content: space-around;
+    }
+ /* --------------------------------------PROJETS-------------------- */
+    .strong{
+      font-size:22px ;
+    }
 
+ /*-------------------------- CONTACT  --------------------------------*/
+  form{
+   width:90%;
+   margin-top: 28px;
+ }
+
+ .clientCompagny{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   margin-top: 17px;
+ }
+
+ #name{
+   width: 45%;
+   font-size: 17px;
+   margin-left: 10px;
+ } 
+
+ #firstName{
+   width: 45%;
+   font-size: 17px;
+   margin-left: 45px;
+ }
+
+ #compagny{
+   width: 45%;
+   font-size: 17px;
+   margin-left: 10px;
+ }
+
+ #location{
+   width:45%;
+   font-size: 17px;
+   margin-left: 45px;
+ }
+
+ #mail{
+  width: 97%;
+  font-size: 17px;
+  margin-left: 12px;
+ }
+
+ #message-contact{
+   width: 97%;
+   margin-left: 12px;
+ }
+
+ #divButton {
+  margin-top: 20px;
+  margin-left: 12px;
+ }   
 }
 
-/*------------------------------------------------@media(max-width: 960px) ----------------------------------------------------*/
-@media(max-width: 960px){
+
+/*-----------------------------------------------------------------------------@media(max-width: 1024px)I pad mini (à l'horizontal)----------------------------------------------------*/
 
 
-
+@media(max-width: 1024px){ 
+ /*-------------------------- HEADER --------------------------------*/
     header{
-
-        font-size: 14px; 
-       }
-
-       nav a{
-        padding-left:20px;
-      }
-    .contentSection{
-        width: 80%;
-      }
-      nav img{
-        width: 14px;
+     font-size: 18px; 
     }
-
-      #presLevelOne {
-        height: 290px;
-      }
-
-    #divPhotoElo{
-        width: 250px;
-        height: 290px;
-        margin-left: 5px;
-        margin-bottom: 2px;
-    }
-    
-    #maPhoto{
-      width:250px;
-      height:290px;
-    }
-
-    h1{
-       
-        font-size:40px;
-        margin: 30px 0px 0px 0px;
-    }
-   
-    }
-        #aPropos {
-            padding-left: 0px;
-            height: 290px;
-        } 
-        
-        hr {
-            margin-top: -15px;
-          }
-
-
-          .strong {
-            font-size:15px ;
-        }
-
-        #url {
-            margin-left: 2vh;
-          }
-    
-          .cards{
-            width: 200px;
-            height: 170px;
-           }
-    
-           .cards img{
-            width: 200px;
-            height: 170px;
-           }
 
     
- 
-
-/*------------------------------------------------@media(max-width: 768px)I pad mini (à la verticale)----------------------------------------------------*/
-@media(max-width: 768px){
-
-
-
-    header{
-
-        font-size: 15px; 
-       }
-
-       nav a{
-        padding-left:15px;
-      }
-  
-      nav img{
-        width: 15px;
-    }
-  
-    main{
-        font-size:16px;
-    }
-
-      #presLevelOne {
-        height: 270px;
-      }
-
-    #divPhotoElo{
-        width: 230px;
-        height: 270px;
-        margin-left: 5px;
-        margin-bottom: 2px;
-    }
-    
-    #maPhoto{
-      width:230px;
-      height:270px;
-    }
-
-    h1{
-       
-        font-size:45px;
-        margin: 30px 0px 0px 0px;
-    }
- 
-        #aPropos {
-            height: 270px;
-        } 
-        hr {
-          margin-top: -15px;
-        }
-
-#devLike {
-  margin-top: 30px;
-  margin-bottom: 20px;
- 
+.btn-log{
+  text-decoration: none !important;
+  color:white ;
+  margin-top: 10px;
+  font-size: 15px;
+  margin-right: 10px;
+  padding-left: 14px;
 }
 
-#LifeLike {
-  margin-bottom: 20px;
-}
-        
-#presentation button {
-  width: 110px;
-  height: 40px;
-  margin-top: 35px;
-  font-size: 14px;
-}
-#presentation button img{
-  width:30px;
-}     
-          
-          #projectTitle{
-            font-size: 16px;
-          }
-          
-        
-        #techno{
-          font-size: 16px;
-        }
-        
-          #githubUrl{
-            font-size: 16px;
-          }
-        
-          #url{
-        
-            font-size: 16px;
-          }
-
-          #cardsContainer{
-            margin-top: 50px;
-          }  
-      .cards{
-        width: 180px;
-        height: 150px;
-       }
-
-       .cards img{
-        width: 180px;
-        height: 150px;
-       }
-       
-}
-    
-
- /*------------------------------------------------@media(max-width: 639px)----------------------------------------------------*/
-@media(max-width: 639px){
-  header{
-    font-size: 12px; 
-   }
+   nav ul{
+     justify-content:flex-start;
+    }
 
    nav a{
-    padding-left:15px;
+     padding-left:35px;
+     margin-left: 20px !important;
+   }
+
+   .nav-link{
+    font-size: 15px;
   }
 
-  nav img{
-    width: 12px;
+
+  nav li{
+    margin-left: 15px !important;
+  }
+
+  .icon-link-git{
+    width: 7px;
+    margin-right: 7px;
+    padding-left: 10px;
+  }    
+/*-----------------------------------------MAIN----------------------------------*/
+
+main {
+  font-size:19px;
 }
 
-  .contentSection{
-    width: 95%;
-  }
+ /*--------------------------  A PROPOS DE MOI  --------------------------------*/
+    #presLevelOne{
+      height: 287px;
+    }
 
-  h1{
-    font-size: 38px;
-  }
+    #divPhotoElo {
+     width: 280px;
+     height: 320px;
+     margin-left: 5px;
+     margin-bottom: 2px;
+    }
 
+    #maPhoto{
+     width: 280px;
+     height: 320px;
+    }
+
+  
+
+    #LifeLike {
+      margin-bottom: 45px;
+    }
+
+ /* --------------------------------------COMPETENCES------------- */
+   .cards{
+     width: 250px;
+     height: 150px;
+    }
+
+   .cards img{
+     width: 250px;
+     height: 150px;
+    }
+
+  /* --------------------------------------PROJETS-------------------- */
+   #projectTitle{
+     font-size: 22px;
+   }
+   
+   #techno{
+     font-size: 22px;
+   }
+  
+   #url{
+     font-size: 22px;
+   }
+  
+   #githubUrl {
+     font-size: 22px;
+   }
+
+  /*--------------------------  FORMATION   --------------------------------*/
+    #formation {
+     margin-bottom: 80px;
+    }
+
+    #pc {
+      width:650px ;
+      margin-top: 55px;
+   }
+
+   #tablette{
+     width:250px;
+     margin-top:-500px;
+     margin-left: 65%;
+    }
+
+   #smartphone{
+     width:125px;
+     margin-top:-300px;
+     margin-left: 55%;  
+    }
 }
 
-  #url {
-    margin-left: 15px;
-  }
-
-  #formContainer{
-    height:400px;
-  }
+ 
+/*------------------------------------------------------------------------------@media(max-width: 960px) ----------------------------------------------------*/
 
 
-  .clientCompagny{
-    width: 300px;
-    display: flex;
-    flex-direction:column;
-justify-content: center;
-    padding: 0px;
-    margin-top: 17px;
-  }
+@media(max-width: 960px){
+ /*-------------------------- HEADER --------------------------------*/
+    header{
+     font-size: 14px; 
+    }
 
-  #name{
-    width: 100%;
-    height: 30px;
-    font-size: 16px;
-  }
+    nav a{
+     padding-left:20px;
+    }
 
-  #firstName{
-    width: 100%;
-    height: 30px;
-    font-size: 16px;
-    margin: 0px;
-   margin-top: 20px;
-  }
+   .contentSection{
+     width: 80%;
+    }
 
-  #compagny{
-    width: 100%;
-    height: 30px;
-    font-size: 16px;
-  }
+    
 
-  #location{
-    width:100%;
-    height: 30px;
-    font-size: 16px;
-    margin: 0px;
-    margin-top: 20px;
-  }
+ /*--------------------------  A PROPOS DE MOI  --------------------------------*/
+    #presLevelOne{
+     height: 290px;
+    }
 
-  #mail{
-    width: 100%;
-    height: 30px;
-    font-size: 16px;
-  }
-  #message-contact{
+    #divPhotoElo{
+     width: 250px;
+     height: 290px;
+     margin-left: 5px;
+     margin-bottom: 2px;
+    }
+    
+    #maPhoto{
+     width:250px;
+     height:290px;
+    }
+
+    h1{
+     font-size:40px;
+     margin: 30px 0px 0px 0px;
+    }
+   
+    #aPropos{
+      padding-left: 0px;
+      height: 290px;
+    } 
+        
+    hr{
+     margin-top: -15px;
+    }
+
+    .strong{
+     font-size:15px ;
+    }
+  
+ /* --------------------------------------COMPETENCES------------- */
+   .cards{
+      width: 200px;
+      height: 170px;
+    }
+    
+    .cards img{
+      width: 200px;
+      height: 170px;
+    }
+
+ /* --------------------------------------PROJETS-------------------- */
+    #url{
+      margin-left: 2vh;
+    }
+}
+ 
+
+/*----------------------------------------------------------------------------@media(max-width: 768px)I pad mini (à la verticale)----------------------------------------------------*/
+
+
+@media(max-width: 768px){
+ /* --------------------------------------GENERALITES------------- */   
+  main{
+    font-size:16px;
+   }
+
+ /*-------------------------- HEADER --------------------------------*/
+   header{
+     font-size: 15px; 
+    }
+
+    nav a{
+     padding-left:15px;
+    }
+  
+  
+  /*--------------------------  A PROPOS DE MOI  --------------------------------*/
+    #presLevelOne {
+     height: 240px;
+     margin-top: 70px;
+    }
+
+    #divPhotoElo{
+     width: 230px;
+     height: 270px;
+     margin-left: 5px;
+     margin-bottom: 2px;
+    }
+    
+    #maPhoto{
+     width:230px;
+     height:270px;
+    }
+
+    h1{
+     font-size:45px;
+     margin: 30px 0px 0px 0px;
+    }
+ 
+    #aPropos{
+     height: 270px;
+    } 
+
+    hr{
+     margin-top: -15px;
+    }
+
+    #devLike {
+      margin-top: 30px;
+     margin-bottom: 60px;
+    }
+
+   #LifeLike {
+     margin-bottom: 60px;
+    }
+        
+   #presentation button {
+     width: 110px;
+     height: 40px;
+     margin-top: 35px;
+     font-size: 14px;
+    }
+
+   #presentation button img{
+     width:30px;
+    } 
+
+  /* --------------------------------------COMPETENCES------------- */
+   #cardsContainer{
+    margin-top: 50px;
+   }  
+   
+   .cards{
+      width: 180px;
+      height: 150px;
+   }
+
+   .cards img{
+    width: 180px;
+    height: 150px;
+   }
+
+ /* --------------------------------------PROJETS-------------------- */
+
+   #projectTitle{
+     font-size: 16px;
+    }
+          
+    #techno{
+     font-size: 16px;
+    }
+        
+    #githubUrl{
+     font-size: 16px;
+    }
+        
+    #url{
+     font-size: 16px;
+    }
+
+
+ /*--------------------------  FORMATION   --------------------------------*/
+   #formation {
+     margin-bottom: 80px;
+    }
+
+    #pc {
+      display: none;
+    }
+
+   #tablette{
+     display: none;  
+    }
+
+    #tablette3b{
+      display: block;
+      width:67%;
+     
+      margin-top:50px;
+      margin-left: 0;  
+     }
+
+   #smartphone{
+     display: none; 
+    } 
+    
+   #smartphone2{
+     display:block;
+     width:33%;
+     margin-top:-300px;
+     margin-left: 60%;  
+    }      
+}
+    
+
+/*------------------------------------------------------------------------------------------@media(max-width: 639px)----------------------------------------------------*/
+
+
+@media(max-width: 639px){
+  /*-------------------------- HEADER --------------------------------*/
+   header{
+     font-size: 12px; 
+    }
+
+    nav a{
+     padding-left:15px;
+    }
+
+   nav img{
+     width: 12px;
+    }
+
+   .contentSection{
+     width: 95%;
+    }
+
+   h1{
+     font-size: 38px;
+   }
+
+  /* --------------------------------------PROJETS-------------------- */
+   #url{
+     margin-left: 15px;
+   }
+
+  /*-------------------------- CONTACT  --------------------------------*/
+   #formContainer{
+     height:400px;
+   }
+
+   .clientCompagny{
+     width: 300px;
+     display: flex;
+     flex-direction:column;
+     justify-content: center;
+     padding: 0px;
+     margin-top: 17px;
+   }
+
+   #name{
+     width: 100%;
+     height: 30px;
+     font-size: 16px;
+   }
+
+   #firstName{
+     width: 100%;
+     height: 30px;
+     font-size: 16px;
+     margin: 0px;
+     margin-top: 20px;
+   }
+
+   #compagny{
+     width: 100%;
+     height: 30px;
+     font-size: 16px;
+   }
+
+   #location{
+     width:100%;
+     height: 30px;
+     font-size: 16px;
+     margin: 0px;
+     margin-top: 20px;
+   }
+
+   #mail{
+     width: 100%;
+     height: 30px;
+     font-size: 16px;
+   }
+
+   #message-contact{
      width: 100%;
      height: 70px;
      font-size: 16px !important;
-    
-    }
-
-    #divButton {
-      margin-top: 20px;
-    }
-    #mailButton {
-      width: 30%;
-      height: 25px;
-      font-size: 16px;
-
-}
-/*------------------------------------------------@media(max-width: 414px)I phone 6,7,8 Plus----------------------------------------------------*/
-@media(max-width: 414px){
- 
-  main{
-    font-size: 15px;
-  }
-  header{
-    font-size: 8px; 
    }
 
+   #divButton{
+     margin-top: 20px;
+   }
+
+   #mailButton {
+     width: 30%;
+     height: 25px;
+     font-size: 16px;
+   }
+}
+
+
+/*------------------------------------------------@media(max-width: 414px)I phone 6,7,8 Plus----------------------------------------------------*/
+
+
+@media(max-width: 414px){
+  /* -------------------------LOGIN--------------------------------- */
+  .div-connex{
+    margin-left: 30px;
+    color: blue;
+  }
+
+
+  /* -----------------------GENERALITES----------------------------- */
+    main{
+      margin-top: 0;
+     font-size: 15px;
+    }
+
+    .forBackgroundB {
+      height: 110vh !important;
+    }
+    
+    /* pr section sur fond Blanc*/
+    .forBackgroundW {
+      height: 110vh !important;
+    }
+  
+  
+  /*-------------------------- HEADER --------------------------------*/
+   header{
+     font-size: 8px;
+      z-index: 1;
+      position:initial;
+      top: 0;
+    }
+
+    .bg-white{
+      background-color: white;
+    }
+
+
+    .icon-link-git img{
+     width: 30px;
+    }
+
    ul{
-    padding-left: 9px;
+     padding-left: 0px !important;
+   }
+
+   nav li{
+    margin-left: 0px !important;
    }
 
    nav a{
-    padding-left:9px;
-  }
+    font-size: 20px;
+     padding-left:0px;
+   }
 
-  nav img{
-    width: 8px;
-}
+   nav img{
+     width: 8px;
+    }
  
-  #logo {
-    margin-top: 2px;
-    margin-left: 2px;
-  }
-  #logo img {
-   width:60px;
-   height: 60px;
-  }
-  main{
-    font-size:14px;
-}
-#presentation{
-  margin-bottom: 60px;
-}
+   #logo{
+     margin-top: 2px;
+     margin-left: 2px;
+   }
 
-}
-h1{
-  font-size:30px;
-  margin: 30px 0px 0px 0px;
-}
+   #logo img{
+     width:60px;
+     height: 60px;
+    }
+
+   main{
+     font-size:14px;
+    }
+
+  /*--------------------------  A PROPOS DE MOI  --------------------------------*/
+ #presentation{
+   margin-bottom: 60px;
+ }
+
+ #aPropos h1{
+   font-size:30px;
+   margin: 30px 0px 30px 0px !important;
+  }
 
   #presLevelOne {
-    height: 230px;
+   height: 216px;
   }
 
-#divPhotoElo{
+  #divPhotoElo{
     width: 190px;
     height: 230px;
+    margin-top: 7px;
     margin-left: 5px;
     margin-bottom: 2px;
+  }
+
+ #maPhoto{
+   width:190px;
+   height:230px;
+   margin-top: 7px;
+  }
+
+  #aPropos {
+    margin-top: 0;
 }
 
-#maPhoto{
-  width:190px;
-  height:230px;
-}
-hr {
-  margin-top: -13px;
-}
-
-#devLike {
-  margin-top: 30px;
-  margin-bottom: 20px;
- 
-}
-
-#LifeLike {
-  margin-bottom: 20px;
-}
-#presentation button {
-  width: 80px;
-  height: 25px;
-  margin-top: 35px;
-  font-size: 12px;
-}
-#presentation button img{
-  width:20px;
-}
-
-#competences{
-  margin-bottom: 18px;
-}
-.cards{
-  width: 150px;
-  height: 110px;
+ hr{
+   margin-top: -13px;
  }
+
+ #devLike {
+   margin-top: 60px;
+   margin-bottom: 30px; 
+  }
+
+ #LifeLike {
+   margin-bottom: 20px;
+ }
+
+ #presentation button {
+   width: 80px;
+   height: 25px;
+   margin-top: 0px;
+   font-size: 12px;
+  }
+
+ #presentation button img{
+   width:20px;
+  }
+
+/* --------------------------------------COMPETENCES------------- */
+#cardsContainer {
+  margin-top: 70px !important;
+}
+
+ #competences{
+   margin-bottom: 18px;
+ }
+
+ .cards{
+   width: 120px;
+   height: 80px;
+   margin-right: 2px;
+  }
 
  .cards img{
-  width: 150px;
-  height: 110px;
+   width: 120px;
+   height: 80px;
+   
  }
-#projets{
-  margin-bottom: 60px;
-}
-.slideshow-container{
-  margin-top: -20px;
- }
-
- #projectTitle{
-  font-size: 11px;
-}
-
-
-#techno{
-font-size: 11px;
-}
-
-#githubUrl{
-  margin-left: 11px;
-  font-size: 11px;
-}
-
-#url{
-  margin-left: 8px;
-  font-size: 11px;
-}
-
- #formation{
-  margin-bottom: 60px;
- }
-
-#pc {
-  margin-top: 55px;
-}
-
-#formContainer {
-  margin-top: 55px;
-  height: 415px;
-}
-
-
-.clientCompagny{
-  width: 300px;
-  display: flex;
-  flex-direction:column;
-justify-content: center;
-  padding: 0px;
-  margin-top: 20px;
-}
-
-#name{
-  width: 100%;
-  height: 30px;
-  font-size: 14px;
-}
-
-#firstName{
-  width: 100%;
-  height: 30px;
-  font-size: 14px;
-  margin: 0px;
- margin-top: 20px;
-}
-
-#compagny{
-  width: 100%;
-  height: 30px;
-  font-size: 14px;
-}
-
-#location{
-  width:100%;
-  height: 30px;
-  font-size: 14px;
-  margin: 0px;
-  margin-top: 20px;
-}
-
-#mail{
-  width: 100%;
-  height: 30px;
-  font-size: 14px;
-}
-#message-contact{
-   width: 100%;
-   height: 70px;
-   font-size: 14px !important;
-  
-  }
-
-  #divButton {
-    margin-top: 20px;
-  }
-  #mailButton {
-    width: 30%;
-    height: 25px;
-    font-size: 14px;
-
-}
-
-/*------------------------------------------------@media(max-width: 375px)I phone 6,7,8 ----------------------------------------------------*/
-@media(max-width: 375px){
-
-  #projectTitle{
-    font-size: 9px;
-  }
-  
-
-#techno{
-  font-size: 9px;
-}
-
-  #githubUrl{
-    margin-left: 11px;
-    font-size: 9px;
-  }
-
-  #url{
-    margin-left: 8px;
-    font-size: 9px;
-  }
-}
-/*------------------------------------------------@media(max-width: 320px)Samsung S9+ ----------------------------------------------------*/
-@media(max-width: 320px){
-
-  main{
-    font-size: 12px;
-  }
-  h1{
-    font-size:22px;
-    margin: 30px 0px 0px 0px;
-  }
-  
-    #presLevelOne {
-      height: 200px;
-    }
-  
-  #divPhotoElo{
-      width: 160px;
-      height: 200px;
-      margin-left: 5px;
-      margin-bottom: 2px;
-  }
-  
-  #maPhoto{
-    width:160px;
-    height:200px;
-  }
-  hr {
-    margin-top: -11px;
-  }
-
  
-  #formContainer {
-    margin-top: 55px;
-    height: 415px;
-  }
-  
-  
-  .clientCompagny{
-    width: 250px;
+
+ /* --------------------------------------PROJETS-------------------- */
+   #projets{
+     margin-bottom: 60px;
+    }
     
+   .slideshow-container{
+      margin-top: 100px;
+   }
+
+   #projectTitle{
+     font-size: 11px;
+    }
+
+   #techno{
+     font-size: 11px;
+   }
+
+   #githubUrl{
+     margin-left: 11px;
+     font-size: 11px;
+   }
+
+   #url{
+     margin-left: 8px;
+     font-size: 11px;
+   }
+
+ /*--------------------------  FORMATION   --------------------------------*/
+   #formation{
+     margin-bottom: 60px;
+   }
+
+
+
+   #tablette3b{
+     display: block;
+     width:88%;
+     margin-top:50px;
+     margin-left: 28px;  
+   }  
+   
+   #smartphone2{
+    display:none;
   }
-  
-  #name{
-    width: 100%;
-    height: 30px;
-    font-size: 12px;
-  }
-  
-  #firstName{
-    width: 100%;
-    height: 30px;
-    font-size: 12px;
-    margin: 0px;
-   margin-top: 20px;
-  }
-  
-  #compagny{
-    width: 100%;
-    height: 30px;
-    font-size: 12px;
-  }
-  
-  #location{
-    width:100%;
-    height: 30px;
-    font-size: 12px;
-    margin: 0px;
-    margin-top: 20px;
-  }
-  
-  #mail{
-    width: 100%;
-    height: 30px;
-    font-size: 12px;
-  }
-  #message-contact{
+
+ /*-------------------------- CONTACT  --------------------------------*/
+   #formContainer{
+     margin-top: 55px;
+     height: 470px;
+    }
+
+   .clientCompagny{
+     width: 355px;
+     display: flex;
+     flex-direction:column;
+     justify-content: center;
+     padding: 0px;
+     margin-top: 20px;
+   }
+
+   #name{
+     width: 100%;
+     height: 30px;
+     font-size: 14px;
+     margin-left: 0px;
+   }
+
+   #firstName{
+     width: 100%;
+     height: 30px;
+     font-size: 14px;
+     margin: 0px;
+     margin-top: 20px;
+   }
+
+   #compagny{
+     width: 100%;
+     height: 30px;
+     font-size: 14px;
+     margin-left: 0px;
+    }
+
+   #location{
+     width:100%;
+     height: 30px;
+     font-size: 14px;
+     margin: 0px;
+     margin-top: 20px;
+    }
+
+   #mail{
+     width: 100%;
+     height: 30px;
+     font-size: 14px;
+     margin-left: 0px;
+    }
+
+   #message-contact{
      width: 100%;
      height: 70px;
-     font-size: 12px !important;
-    
+     font-size: 14px !important;
+     margin-left: 0px;
     }
-  
-    #divButton {
-      margin-top: 20px;
+
+    #divButton{
+     margin-top: 20px;
+     margin-left:0 ;
     }
+
     #mailButton {
       width: 30%;
       height: 25px;
-      font-size: 12px;
-  
+      font-size: 14px; 
+   }
+}
+
+
+/*---------------------------------------------------------------------------------------------@media(max-width: 375px)I phone 6,7,8 ----------------------------------------------------*/
+
+
+@media(max-width: 375px){
+/* --------------------------------------A PROPOS DE MOI------------- */   
+
+#presLevelOne {
+  height: 242px;
+ }
+
+ #aPropos h1{
+  font-size:27px;
+  margin: 30px 0px 20px 0px !important;
+ }
+ 
+ #divPhotoElo{
+  margin-top: 20px;
+}
+
+#maPhoto{
+ margin-top: 20px;
+}
+
+
+
+/* --------------------------------------COMPETENCES------------- */
+
+
+ .cards{
+  margin-bottom: 20px;
   }
+
+
+
+
+  /* --------------------------------------PROJETS-------------------- */
+   #projectTitle{
+     font-size: 9px;
+    }
   
+   #techno{
+     font-size: 9px;
+   }
+
+   #githubUrl{
+     margin-left: 11px;
+     font-size: 9px;
+    }
+
+   #url{
+     margin-left: 8px;
+     font-size: 9px;
+    }
+
+/*--------------------------  FORMATION   --------------------------------*/
+#formation{
+  margin-bottom: 60px;
+}
+
+#formation h1{
+  margin-top: 10px !important;
+}
+
+#tablette3b{
+  display: block;
+  width:100%;
+  margin-top:40px;
+  margin-left:0;
+}   
+
+  /*-------------------------- CONTACT  --------------------------------*/
+   .clientCompagny{
+     width: 321px;
+     display: flex;
+     flex-direction:column;
+     justify-content: center;
+     padding: 0px;
+     margin-top: 20px;
+    }
+}
+
+
+/*-----------------------------------------------------------------------------------------------@media(max-width: 320px)Samsung S9+ ----------------------------------------------------*/
+
+
+@media(max-width: 320px){
+/* --------------------------------------GENERALITES------------- */   
+  main{
+   font-size: 12px;
+  }
+
+  h1{
+   font-size:22px;
+   margin: 30px 0px 0px 0px;
+  }
+
+ /*--------------------------  A PROPOS DE MOI  --------------------------------*/
+    #presLevelOne {
+     height: 200px;
+    }
+  
+   #divPhotoElo{
+     width: 160px;
+     height: 200px;
+     margin-left: 5px;
+     margin-bottom: 2px;
+    }
+  
+   #maPhoto{
+     width:160px;
+     height:200px;
+    }
+
+   hr{
+     margin-top: -11px;
+    }
+
+/*--------------------------  FORMATION   --------------------------------*/
+ #smartphone2{
+    margin-top:-100px;
+  } 
+
+ /*-------------------------- CONTACT  --------------------------------*/
+   #formContainer {
+     margin-top: 55px;
+     height: 450px;
+    }
+  
+   .clientCompagny{
+     width: 275px; 
+    }
+  
+   #name{
+     width: 100%;
+     height: 30px;
+     font-size: 12px;
+    }
+  
+   #firstName{
+     width: 100%;
+     height: 30px;
+     font-size: 12px;
+     margin: 0px;
+     margin-top: 20px;
+    }
+  
+   #compagny{
+     width: 100%;
+     height: 30px;
+     font-size: 12px;
+    }
+  
+   #location{
+     width:100%;
+     height: 30px;
+     font-size: 12px;
+     margin: 0px;
+     margin-top: 20px;
+    }
+  
+   #mail{
+     width: 100%;
+     height: 30px;
+     font-size: 12px;
+    }
+
+   #message-contact{
+     width: 100%;
+     height: 70px;
+     font-size: 12px !important;
+    }
+  
+   #divButton {
+     margin-top: 20px;
+    }
+
+   #mailButton {
+     width: 30%;
+     height: 25px;
+     font-size: 12px;
+    }  
 }

@@ -6,10 +6,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="./style.css">
+		<link rel="stylesheet" href="./responsive.css">
 		<title>Document</title>
 	</head>
 	<body>
-		<header>
+		<header class="head-log">
 		<div id="logo"><img src="./images/LogoEloOk.png" alt="logo initiales"></div>
 			<nav class="div-connex">
 				<ul>
@@ -19,20 +20,19 @@
 				</ul>
 			</nav>
 		</header>
-		<br>
-		<h1 class="h1-log">Formulaire de connexion</h1>
-    <!--Formulaire de login pour ajouter de nouveau projets une fois loguée!-->
-		<form action="/login" method="POST">
-			<label for="email">email</label>
-			<input type="text" id="email" name="mail">
-			<label for="password">mot de passe</label>
-			<input type="text" id="password" name="password">
+		<article class="article-log">
+			<h1 class="h1-log">Formulaire de connexion</h1>
+			<!--Formulaire de login pour ajouter de nouveau projets une fois loguée!-->
+			<form action="/login" method="POST">
+				<label for="email">email</label>
+				<input type="text" id="email" name="mail">
+				<label for="password">mot de passe</label>
+				<input type="text" id="password" name="password">
 
-			<button type="submit">valider</button>
-		</form>
+				<button type="submit">valider</button>
+			</form>
 
-		<div id="msg-error">{{errConnect}}</div>
-
-		
+			<div id="msg-error">{{errConnect}}</div>
+		</article>	
 	</body>
 </html>

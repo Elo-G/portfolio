@@ -8,6 +8,8 @@
 		<link rel="stylesheet" href="./responsive.css">
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel=" stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"/>
 		<title>portfolio</title>
 	</head>
 
@@ -20,42 +22,44 @@
 	<body>
 		<!-- ----------------------  HEADER  ------------------------------------------ !-->
 		<header>
-			
-			<div id="logo"><img src="./images/LogoEloOk.png" width="80px" height="80px" alt="logo initiales"></div>
-			<nav>
-				<ul>
-					<li>
-						<a href="#presentation">A propos de moi</a>
-					</li>
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<div id="logo"><img src="./images/LogoEloOk.png" width="80px" height="80px" alt="logo initiales"></div>
+						<a class="icon-link-git" href="https://www.linkedin.com/"><img src="./images/IconeLinkedIn.png" alt="logo linkedin" width="30px"></a>
+						<a class="icon-link-git" href="https://www.github.com//"><img src="./images/iconeGithub.png" alt="logo github" width="30px"></a>
+						<a class="btn-log {% if active == 'login' %}active{% endif %}" href="login">Login</a>
+					<button
+						class="btn-ham navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-					<li>
-						<a href="#competences">Mes compétences</a>
-					</li>
-
-					<li>
-						<a href="#projets">Projets</a>
-					</li>
-
-					<li>
-						<a href="#formation">Formation</a>
-					</li>
-
-					<li>
-						<a href="/login">Login</a> <!-- lien ancre pour me ramener à ma route /login-->
-					</li>
-
-					<li>
-						<a href="#contact">Contact</a>
-					</li>
-
-					<li>
-						<a href="https://www.linkedin.com/"><img src="./images/IconeLinkedIn.png" alt="logo linkedin" width="30px"></a>
-					</li>
-
-					<li>
-						<a href="https://www.github.com//"><img src="./images/iconeGithub.png" alt="logo github" width="30px"></a>
-					</li>
-				</ul>
+						<div class="div-navbar collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="text-end navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link {% if active == 'presentation' %}active{% endif %}" href="#presentation">A propos de moi</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link {% if active == 'competences' %}active{% endif %}" href="#competences">Mes compétences</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link {% if active == 'projets' %}active{% endif %}" href="#projets">Projets</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link {% if active == 'formation' %}active{% endif %}" href="#formation">Formation</a>
+							</li>
+							<li>
+								<a class="nav-link {% if active == 'contact' %}active{% endif %}" href="#contact" href="#contact">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</nav>
 		</header>
 
@@ -82,9 +86,9 @@
 
 			  	  <div id="devLike" class="animate__animated animate__backInLeft">
 					  <p>
-						  <b>
-							  Ce que j'aime dans le dév :</b><br>
-						  créer et réaliser des projets, trouver des solutions pour répondre à des besoins, acquérir de nouvelles connaissances pour augmenter en compétences et pouvoir créer d'avantage.
+						  <b>Ce que j'aime dans le dév :</b>
+						  <br>
+							créer et réaliser des projets, trouver des solutions pour répondre à des besoins, acquérir de nouvelles connaissances pour augmenter en compétences et pouvoir créer d'avantage.
 					  </p>
 				  </div>
 
@@ -105,12 +109,15 @@
 				<section class='contentSection' id="competences">
 					<h1>Mes compétences</h1>
 					<article id="cardsContainer">
-						<div class="cards" data-aos="flip-left"><img src="./images/htmlCssCadre.png" alt="icones html et css"></div>
-						<div class="cards" data-aos="flip-left" data-aos-delay="500"><img src="./images/jsCadre.png" alt="icone js"></div>
-						<div class="cards" data-aos="flip-left" data-aos-delay="900"><img src="./images/bootstrapCadre.png" alt="icone bootstrap"></div>
-						<div class="cards" data-aos="flip-left" data-aos-delay="1300"><img src="./images/phpCadre.png" alt="icone php"></div>
-						<div class="cards" data-aos="flip-left" data-aos-delay="1700"><img src="./images/figmaCadre.png" alt="icone figma"></div>
-					    <div class="cards" data-aos="flip-left"data-aos-delay="2100"><img src="./images/mongoDbCadre.png" alt="logo mongodb"></div>
+						<div class="cards" data-aos="flip-left"><img src="./images/htmlCssImgCard.png" alt="icones html et css"></div>
+						<div class="cards" data-aos="flip-left" data-aos-delay="500"><img src="./images/jsImgCard.png" alt="icone js"></div>
+						<div class="cards" data-aos="flip-left" data-aos-delay="1300"><img src="./images/phpImgCard.png" alt="icone php"></div>
+					    <div class="cards" data-aos="flip-left"data-aos-delay="2100"><img src="./images/nodejsImgCard.png" alt="logo mongodb"></div>
+						<div class="cards" data-aos="flip-left"data-aos-delay="2900"><img src="./images/mongodbImgCard.png" alt="logo mongodb"></div>
+						<div class="cards" data-aos="flip-left"data-aos-delay="3800"><img src="./images/sqlImgCard.png" alt="logo mongodb"></div>
+						<div class="cards" data-aos="flip-left" data-aos-delay="4600"><img src="./images/bootstrapImgCard.png" alt="icone bootstrap"></div>
+						<div class="cards" data-aos="flip-left"data-aos-delay="5400"><img src="./images/wordpressImgCard.png" alt="logo mongodb"></div>
+						<div class="cards" data-aos="flip-left"data-aos-delay="6200"><img src="./images/figmaImgCard.png" alt="logo mongodb"></div>
 					</article>
 				</section>
 			</section>
@@ -119,10 +126,6 @@
 			<!------------Projets--------------------!-->
 			<section class="forBackgroundW">
 			  <section class='contentSection' id="projets">
-
-
-
-			  
 				  <h1>Projets</h1>
 				  {% for project in projects %}
 					  <div class="slideshow-container">
@@ -136,20 +139,19 @@
 					  </div>
 				  {% endfor %}
 				  <br>
-
-				
 			  </section>
-
-
-		   </section>
+		    </section>
 
 			<!------------Formation--------------------!-->
 			
 			<section class="forBackgroundB">
 			  <section class='contentSection' id="formation">
 				  <h1>Formation</h1>
-				  <div ><img id="pc" src="./images/pcTabMob.png" width="100%" alt="contenu formation ri7 contenu dans écran de pc " class="animate__animated animate__backInLeft">
-				  </div>
+				  <div ><img id="pc" src="./images/pcFormation.png" width="100%" alt="contenu formation ri7 contenu dans écran de pc " class="animate__animated animate__backInLeft"></div>
+				  <div ><img id="tablette" src="./images/tabletteFormation.png" width="100%" alt="contenu formation ri7 contenu dans écran de pc " class="animate__animated animate__backInLeft"></div>
+                  <div ><img id="tablette3b" src="./images/tablette3b.png" width="100%" alt="contenu formation ri7 contenu dans écran de pc " class="animate__animated animate__backInLeft"></div>				  
+				  <div ><img id="smartphone" src="./images/smartphoneFormation.png" width="100%" alt="contenu formation ri7 contenu dans écran de pc " class="animate__animated animate__backInLeft"></div>
+				  <div ><img id="smartphone2" src="./images/smartphone2.png" width="100%" alt="contenu formation ri7 contenu dans écran de pc " class="animate__animated animate__backInLeft"></div>
 			  </section>
             </section>
 
@@ -182,6 +184,9 @@
 			  </section>
 		   </section>
 		</main>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+				integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+				crossorigin="anonymous"></script>
 		<script src='./script/main.js'></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script>
